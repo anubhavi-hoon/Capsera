@@ -11,6 +11,18 @@
 
 ## 1. Database Conventions (Established by PRD & ADR-002)
 
+### Database Schema Guidelines (Proposed — Pending Team Approval per `ADR-003`)
+
+- **Proposed Schema Design Reference:** `docs/DATA_MODEL.md`, with `database/migrations/` containing the executable PostgreSQL migrations (no standalone `schema.sql` file exists in the repository).
+- **Mandatory Rules:**
+  - All team members must follow the agreed PostgreSQL schema.
+  - The schema reference (`docs/DATA_MODEL.md`) defines table names, columns, primary keys, foreign keys, relationships, and constraints.
+  - Approved schema changes must be implemented using versioned migrations in `database/migrations/`.
+  - No member may independently introduce duplicate entities, incompatible column names, or conflicting relationships.
+  - Shared schema changes require team discussion and approval.
+
+### General Conventions
+
 1. **RDBMS Engine:** PostgreSQL (encoding `UTF8`) with full ACID transactions and foreign key enforcement.
 2. **Database Name:** `capsera_db`.
 3. **Naming Rules:**
