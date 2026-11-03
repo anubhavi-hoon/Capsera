@@ -1,0 +1,19 @@
+{
+  "name": "capsera",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CAPSERA — Digital Capacity Building and Learning Management Portal (SIH26075)",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start:server": "npm start --prefix server",
+    "build:client": "npm run build --prefix client",
+    "preview:client": "npm run preview --prefix client",
+    "check:server": "npm run check --prefix server"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
